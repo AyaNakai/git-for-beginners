@@ -1,28 +1,47 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Git チュートリアル -はじめに-</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Lesson 00：準備と専用ブランチ | Gitチュートリアル</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <h1 class="c-title">はじめに</h1>
-  <p>このチュートリアルでは、Gitの基本的な使い方を学びます。</p>
-  <p>まずブランチについて下記の内容を行なってください。</p>
-  <h2 class="c-subtitle">Lesson00 TASK</h2>
-  <ol>
-    <li>
-      developブランチから<b class="highlight-text">「youername-develop」</b>で専用のブランチを作ってください。<br>※このブランチがあなた専用のdevelopブランチです。以降、<b>全てのマージはこのブランチを使います。</b>
-      <ul>
-        <li>今の状態：<br><img src="assets/images/l0_01.png" alt=""></li>
-        <li>この状態に：<br><img src="assets/images/l0_02.png" alt=""></li>
-      </ul>
-    </li>
-    <li>ブランチを作成したら空の状態でも良いのでプッシュしてください。</li>
-  </ol>
-  <div class="wrap">
-    <a class="c-btn" href="/lesson-01/">Lesson01へ</a>
-  </div>
+  <header>
+    <h1>Lesson 00：準備と専用ブランチ</h1>
+    <p>Git・GitHubアカウント・エディタを準備し、自分の練習場所を作ります。</p>
+    <p>エディタでこのファイルを開き、「チュートリアル0-1」から順番に進めてください。2つ目以降の課題の表示用ソースはコメントアウトされています。</p>
+  </header>
+  <main>
+  <!--
+    【チュートリアル0-1】準備する
+    1. GitHubでこのリポジトリを自分のアカウントへForkしてください。
+    2. 自分のForkのURLで git clone <URL> を実行し、作成されたフォルダへ移動します。
+    3. git --version と git remote -v でGitとorigin（自分のFork）を確認します。
+    4. git config user.name と git config user.email を確認します。未設定なら git config user.name "名前" と git config user.email "メール" で、このリポジトリに設定します。
+    5. 完了条件：originが自分のForkを指し、コミット用の名前とメールが設定されている。
+  -->
+  <section>
+    <h2>課題0-1：準備する</h2>
+    <p>Gitの練習を始めます。</p>
+  </section>
+  <!--
+    【チュートリアル0-2】専用ブランチを作る
+    1. この課題のソースを囲むコメントを解除します。
+    2. 以降のコマンド内の yourname は自分の識別名に置き換えます。
+    3. git switch -c practice/yourname で専用の統合先を作ります。
+    4. git push -u origin practice/yourname で公開します。認証が必要な場合はGitHubの案内に従います。
+    5. この課題ではファイルをコミットせず、git restore lesson-00/index.html でコメント解除を取り消します。
+    6. 完了条件：git status がクリーンで、GitHubに practice/yourname がある。既存コミットを指すブランチなので、空コミットは不要です。
+    7. 次のlesson-01から、この専用ブランチで順番に進めます。
+  -->
+  <!--
+  <section>
+    <h2>課題0-2：専用ブランチを作る</h2>
+    <p>自分専用の練習ブランチを作りました。</p>
+  </section>
+  -->
+  </main>
+  <nav><a href="../index.html">レッスン一覧</a> <a href="../lesson-01/index.html">次のレッスン</a></nav>
 </body>
 </html>
