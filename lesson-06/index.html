@@ -15,7 +15,7 @@
   <main>
   <!--
     【チュートリアル6-1】同じ行を別々に変更する
-    1. git switch practice/yourname で作業ツリーがクリーンであることを確認します。
+    1. git switch practice/yourname で作業ツリーが空であることを確認します。
     2. git switch -c feature/yourname-lesson-06-a を実行します。
     3. 下の「開催日は未定です」を「開催日は土曜日です」に変更し、git add lesson-06/index.html と git commit -m "開催日を土曜日に変更" を実行します。
     4. git switch practice/yourname の後、git switch -c feature/yourname-lesson-06-b を実行します。Aから作らないことがポイントです。
@@ -35,15 +35,17 @@
     5. この演習では「開催日は土日です」を残す方針とし、競合マーカーと不要な行を消します。現実の作業では意図を確認して決めます。
     6. ブラウザで表示を確認し、git add lesson-06/index.html と git commit -m "開催日の競合を解決" を実行します。
     7. この課題のソースを囲むコメントを解除し、git add lesson-06/index.html と git commit -m "競合解決の完了を記録"、git push を実行します。
-    8. 完了条件：git statusがクリーンで、画面に「開催日は土日です」が表示される。
+    8. 完了条件：git statusが空で、画面に「開催日は土日です」が表示される。
     9. 途中でマージをやり直す場合：解決コミット前なら git merge --abort でマージ開始前に戻せます。
   -->
+  <!-- ここの下からコメント（41行目）を解除します -->
   <!--
   <section>
     <h2>課題6-2：競合を解決する</h2>
     <p>両方の変更の意図を確認して解決しました。</p>
   </section>
   -->
+  <!-- この上までのコメント（48行目）を解除します -->
   </main>
   <nav><a href="../index.html">レッスン一覧</a> <a href="../lesson-05/index.html">前のレッスン</a> <a href="../lesson-07/index.html">次のレッスン</a></nav>
 </body>
